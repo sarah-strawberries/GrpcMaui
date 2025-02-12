@@ -26,7 +26,7 @@ var app = builder.Build();
 app.MapGrpcService<ScheduleOMaticService>();
 
 //server endpoint
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "IT WORKS!");
 
 app.Run();
 
@@ -52,3 +52,4 @@ public class ScheduleOMaticService : IScheduleOMaticService
         });
     }
 }
+
